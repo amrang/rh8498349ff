@@ -1,0 +1,30 @@
+--y298hdqdf
+ver982 = "V.01"
+log672 = "None"
+
+--7892yhf98wqe9
+print("Version: " .. ver982)
+print("Changelog:")
+print(log672)
+print("-----------------------------------------------------------------------------")
+print("Welcome, this will automatically try to locate and delete Anti-Cheats, however, this is not guaranteed to work.")
+print("All this does is look for keywords, e.g Anti, Cheat, Anti-Cheat,Exploit.")
+print("But this is useful for some games that have this sort of thing, you are free to edit the word list if you find any anti-cheat names.")
+warn("To initiate the script please type /e I")
+
+--guiygqwd7g832
+function MAIN()
+      
+        
+        end
+
+
+--ua98r3rjfw32
+game:GetService("Players").LocalPlayer.Chatted:Connect(function(msg)
+    local str = msg:lower()
+if str == "/e i" then
+    MAIN()
+    else
+    print("Waiting...")
+    end
+end)
