@@ -14,7 +14,13 @@ warn("To initiate the script please type /e I")
 
 --guiygqwd7g832
 function MAIN()
+      for _,f in pairs(game:GetDescendants()) do
+      for _,w in pairs(Whitelisted) do
+      for _,b in pairs(Blacklisted) do
       
+      end
+      end
+      end
         
         end
 
