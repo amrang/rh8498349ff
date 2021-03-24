@@ -44,8 +44,6 @@ local hook = game:GetService("Players").LocalPlayer.Kick;
 local mt = getrawmetatable(game:GetService("Players").LocalPlayer)
 local OldNamecall = mt.__namecall
 local OldIndex = mt.__index
-
-print("Ch0nky#8948 - 579306070040641546 AntiKick") -- remove this if you want, just dont claim it as yours ty
 make_writeable(mt)
 mt.__namecall = newcclosure(function(self, Index, ...)
     local NameCallMethod = getnamecallmethod()
