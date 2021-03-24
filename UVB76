@@ -19,7 +19,7 @@ function MAIN()
       for _,w in pairs(Whitelisted) do
       for _,b in pairs(Blacklisted) do
       local findlower = string:lower(f.Name)
-      if findlower.find(string:lower(w)) and ~= findlower.find(string:lower(b))then
+      if findlower.find(string:lower(w)) and not findlower.find(string:lower(b))then
       local iname = f.Name
       local iPartClass = f.className
       local iPath = f:GetFullName()
