@@ -14,6 +14,7 @@ warn("To initiate the script please type /e I")
 
 --guiygqwd7g832
 function MAIN()
+local int24 = 0
       for _,f in pairs(game:GetDescendants()) do
       for _,w in pairs(Whitelisted) do
       for _,b in pairs(Blacklisted) do
@@ -22,12 +23,19 @@ function MAIN()
       local iname = f.Name
       local iPartClass = f.className
       local iPath = f:GetFullName()
-      
+      int24 = int24 + 1
+     print("-------------------------")
+     print("Name: " .. iname)
+     print("Class Name: " .. iPartClass)
+     print("Path: " .. iPath)
+     print("Deleted!")
+     print("-------------------------")
       end
       end
       end
       end
-        
+      print("Found " .. int24 .. " possible AC instances in total")
+      print("If you want to be 100% sure go and check using dex yourself and if you find any add the name to the whitelist/keywordlist.")
         end
 
 
