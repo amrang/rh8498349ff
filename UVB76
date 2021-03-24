@@ -13,8 +13,8 @@ print("But this is useful for some games that have this sort of thing, you are f
 warn("To initiate the script please type /e I")
 
 --guiygqwd7g832
-function MAIN()
 local int24 = 0
+function MAIN()
       for _,f in pairs(game:GetDescendants()) do
       for _,w in pairs(Whitelisted) do
       for _,b in pairs(Blacklisted) do
@@ -37,9 +37,17 @@ local int24 = 0
       print("Found " .. int24 .. " possible AC instances in total")
       print("If you want to be 100% sure go and check using dex yourself and if you find any add the name to the whitelist/keywordlist.")
         end
+        
+--dssdfa32t324
+function LAKS()
 
-
+end
 --ua98r3rjfw32
+if LocalAntiKickScript == true then
+print("LAKS(Local Anti Kick Script) has been activated.")
+LAKS()
+end
+
 if ForceStart == true then
 MAIN()
 else
