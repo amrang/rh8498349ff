@@ -17,7 +17,13 @@ function MAIN()
       for _,f in pairs(game:GetDescendants()) do
       for _,w in pairs(Whitelisted) do
       for _,b in pairs(Blacklisted) do
+      local findlower = string:lower(f.Name)
+      if findlower.find(string:lower(w)) and ~= findlower.find(string:lower(b))then
+      local iname = f.Name
+      local iPartClass = f.className
+      local iPath = f:GetFullName()
       
+      end
       end
       end
       end
@@ -26,6 +32,9 @@ function MAIN()
 
 
 --ua98r3rjfw32
+if ForceStart == true then
+MAIN()
+else
 game:GetService("Players").LocalPlayer.Chatted:Connect(function(msg)
     local str = msg:lower()
 if str == "/e i" then
@@ -34,3 +43,4 @@ if str == "/e i" then
     print("Waiting...")
     end
 end)
+end
